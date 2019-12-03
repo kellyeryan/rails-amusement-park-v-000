@@ -1,0 +1,34 @@
+<h1>Edit Attraction</h1>
+
+<%= form_with model: @attraction do |form| %>
+
+<p>
+  <%= form.label :name, "Name" %><br>
+  <%= form.text_field :name %>
+</p>
+
+<p>
+  <%= form.label :min_height, "Minimum Height" %><br>
+  <%= form.text_field :min_height %>
+</p>
+
+<p>
+  <%= form.label :happiness_rating, "Happiness Rating" %><br>
+  <%= form.text_field :happiness_rating %>
+</p>
+
+<p>
+  <%= form.label :nausea_rating, "Nausea Rating" %><br>
+  <%= form.text_field :nausea_rating %>
+</p>
+
+<p>
+  <%= form.label :tickets, "Tickets" %><br>
+  <%= form.text_field :tickets %>
+</p>
+
+<p>
+  <%= form.submit "Update Attraction" %>
+</p>
+
+<% end %>
